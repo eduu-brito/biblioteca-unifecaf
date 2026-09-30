@@ -1,0 +1,544 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    min-height: 80px;
+    background-color: #003b70;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    font-size: 1.8em;
+}
+
+.logo h2 {
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 1.05em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #f5c400;
+}
+
+
+/* =========================
+   INÍCIO
+========================= */
+
+#inicio {
+    width: 100%;
+    min-height: 550px;
+
+    padding: 70px 8%;
+
+    background-color: #eaf2f8;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+#inicio div {
+    width: 50%;
+}
+
+#inicio h1 {
+    color: #003b70;
+    font-size: 3.2em;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+#inicio p {
+    color: #444444;
+    font-size: 1.2em;
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background-color: #003b70;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #f5c400;
+    color: #003b70;
+}
+
+#inicio img {
+    width: 100%;
+    max-width: 500px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   LIVROS
+========================= */
+
+#livros {
+    width: 100%;
+
+    padding: 80px 5%;
+
+    background-color: #ffffff;
+}
+
+#livros h2 {
+    text-align: center;
+
+    color: #003b70;
+    font-size: 2.5em;
+
+    margin-bottom: 50px;
+}
+
+#container-livros {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+#container-livros > div {
+    background-color: #f4f6f8;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+#container-livros > div:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+#container-livros h3 {
+    color: #003b70;
+    font-size: 1.4em;
+
+    margin-bottom: 20px;
+}
+
+#container-livros img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+#container-livros p {
+    color: #555555;
+
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+#categorias {
+    width: 100%;
+
+    padding: 80px 5%;
+
+    background-color: #eaf2f8;
+}
+
+#categorias h2 {
+    text-align: center;
+
+    color: #003b70;
+    font-size: 2.5em;
+
+    margin-bottom: 50px;
+}
+
+#container-categorias {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+#container-categorias > div {
+    background-color: #ffffff;
+
+    padding: 30px 20px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+#container-categorias > div:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+#container-categorias h3 {
+    color: #003b70;
+    font-size: 1.4em;
+
+    margin-bottom: 15px;
+}
+
+#container-categorias p {
+    color: #555555;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+#container-categorias a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background-color: #003b70;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#container-categorias a:hover {
+    background-color: #f5c400;
+    color: #003b70;
+}
+
+
+/* =========================
+   SOBRE A BIBLIOTECA
+========================= */
+
+#sobre {
+    width: 100%;
+    min-height: 500px;
+
+    padding: 70px 8%;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+#sobre div {
+    width: 50%;
+}
+
+#sobre h2 {
+    color: #003b70;
+    font-size: 2.5em;
+
+    margin-bottom: 25px;
+}
+
+#sobre p {
+    color: #555555;
+
+    font-size: 1.1em;
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+#sobre img {
+    width: 500px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    width: 100%;
+    min-height: 150px;
+
+    background-color: #003b70;
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media only screen and (max-width: 900px) {
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    #inicio {
+        padding: 50px 5%;
+        gap: 30px;
+    }
+
+    #inicio h1 {
+        font-size: 2.3em;
+    }
+
+    #inicio img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #container-livros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #container-categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #sobre {
+        padding: 60px 5%;
+    }
+
+    #sobre img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        min-height: auto;
+
+        padding: 20px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    #inicio {
+        flex-direction: column;
+
+        padding: 40px 6%;
+
+        text-align: center;
+    }
+
+    #inicio div {
+        width: 100%;
+    }
+
+    #inicio h1 {
+        font-size: 2em;
+    }
+
+    #inicio p {
+        font-size: 1em;
+    }
+
+    #inicio img {
+        width: 100%;
+        max-width: 400px;
+
+        height: 250px;
+
+        margin: auto;
+    }
+
+    #livros {
+        padding: 50px 6%;
+    }
+
+    #livros h2 {
+        font-size: 2em;
+    }
+
+    #container-livros {
+        grid-template-columns: 1fr;
+    }
+
+    #categorias {
+        padding: 50px 6%;
+    }
+
+    #categorias h2 {
+        font-size: 2em;
+    }
+
+    #container-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    #sobre {
+        flex-direction: column;
+
+        padding: 50px 6%;
+
+        text-align: center;
+    }
+
+    #sobre div {
+        width: 100%;
+    }
+
+    #sobre h2 {
+        font-size: 2em;
+    }
+
+    #sobre p {
+        font-size: 1em;
+    }
+
+    #sobre img {
+        width: 100%;
+        max-width: 400px;
+
+        height: 250px;
+
+        margin: auto;
+    }
+
+    footer {
+        padding: 35px 20px;
+    }
+}
